@@ -1,0 +1,7 @@
+version: '3'
+services:
+  pivot:
+    build: .
+    image: pivot
+    volumes:
+      - .:/usr/src/app
