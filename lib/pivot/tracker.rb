@@ -13,7 +13,7 @@ module Pivot
     end
 
     def self.total_points(items, assignee: nil)
-      selected_items = assignee ? items.filter { |item| item[:assignee] == assignee } : items
+      selected_items = assignee ? items.select { |item| item[:assignee] == assignee } : items
 
       selected_items.reduce(0) { |sum, item| sum + item[:points] }
     end
