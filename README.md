@@ -1,3 +1,6 @@
+## Requirement
+Requirement for this task were to implement the code in accordance to existing specs.
+
 ## Setup
 Please make sure that you have ruby 2.3 or higher installed.
 
