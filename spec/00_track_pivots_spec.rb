@@ -39,6 +39,7 @@ RSpec.describe Pivot::Tracker do
 
   describe ".total_points" do
     it "sums the total of points that was pivoted" do
+      # 13 is typo or I did not understand the task...
       expect(Pivot::Tracker.total_points(items)).to eq(13)
     end
 
@@ -48,7 +49,7 @@ RSpec.describe Pivot::Tracker do
   end
 
   describe ".unique_assignees" do
-    it "gets the unique assignee emails tbat pivoted" do
+    it "gets the unique assignee emails that pivoted" do
       unique_assignees = Pivot::Tracker.unique_assignees(items)
 
       expect(unique_assignees.count).to eq(5)
